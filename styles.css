@@ -351,15 +351,18 @@ header {
 .concierge-card-dark .concierge-text span {
   display: block;
   font-size: 11px;
+  line-height: 1.35;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--gold-light);
   font-weight: 600;
+  margin-bottom: 4px;
 }
 .concierge-card-dark .concierge-text p {
   font-size: 13px;
+  line-height: 1.45;
   color: #dbe4ea;
-  margin-top: 2px;
+  margin: 0;
 }
 .concierge-icon-gold {
   width: 40px;
