@@ -740,6 +740,14 @@ header {
   gap: 36px;
   margin-bottom: 64px;
 }
+@media (min-width: 821px) {
+  .gallery-grid > article:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    max-width: 550px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
 .gallery-card {
   background: #ffffff;
   border-radius: 12px;
