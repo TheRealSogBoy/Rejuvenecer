@@ -804,9 +804,12 @@ header {
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 4px;
+  z-index: 5;
 }
 .compare-badge.before-label { left: 16px; }
 .compare-badge.after-label { right: 16px; }
+.compare-badge.top-label { top: 16px; left: 16px; }
+.compare-badge.bottom-label { bottom: 16px; left: 16px; top: auto; }
 
 /* Instagram Reels Cards */
 .reels-grid {
