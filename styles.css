@@ -242,20 +242,31 @@ header {
   background: var(--gold-light);
 }
 
-/* --- Hero Section (Full Photo Background Cover) --- */
+/* --- Hero Section (Full Video & Photo Background Cover) --- */
 .hero-cover-bg {
   position: relative;
   min-height: clamp(620px, 86vh, 880px);
   display: flex;
   align-items: center;
   background-color: #0e2230;
-  background-image: url('assets/fachada-hq.jpg');
+  background-image: url('assets/hero-poster.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   padding-top: clamp(60px, 8vw, 110px);
   padding-bottom: clamp(60px, 8vw, 110px);
   overflow: hidden;
+}
+
+.hero-cover-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero-cover-overlay {
