@@ -166,3 +166,27 @@ if (instagramGrid) {
   }
 })();
 
+// Analytics & Meta Pixel WhatsApp Conversion Tracking
+document.addEventListener('click', function(e) {
+  const waLink = e.target.closest('a[href*="wa.me"]');
+  if (!waLink) return;
+
+  if (typeof gtag === 'function') {
+    gtag('event', 'generate_lead', {
+      event_category: 'engagement',
+      event_label: 'whatsapp_click',
+      link_url: waLink.href
+    });
+  }
+
+  if (typeof fbq === 'function') {
+    fbq('track', 'Contact', {
+      content_name: 'WhatsApp Consultation',
+      content_category: 'Lead'
+    });
+    fbq('track', 'Lead', {
+      content_name: 'WhatsApp Consultation'
+    });
+  }
+});
+
