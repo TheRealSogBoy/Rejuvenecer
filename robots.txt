@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rejuvenecer.co/sitemap.xml
+Sitemap: https://www.rejuvenecer.co/sitemap.xml
